@@ -15,8 +15,6 @@ except Exception as e:
 @click.command()
 @click.argument('input_path', type=click.Path(exists=True))
 def main(input_path):
-    print(input_path)
-
     doc = None
     try:
         print('Loading from HTML template:', input_path)
