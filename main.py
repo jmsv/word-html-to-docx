@@ -1,10 +1,9 @@
-from __future__ import unicode_literals
+import click
 from win32com import client as com
 from win32com.client import constants
 from pywintypes import com_error
 from collections import OrderedDict
 from pkg_resources import iter_entry_points
-import click
 
 try:
     Word = com.gencache.EnsureDispatch('Word.Application')
